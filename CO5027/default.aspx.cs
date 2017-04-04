@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CO5027.Entite;
 
 namespace CO5027
 {
@@ -13,6 +14,9 @@ namespace CO5027
         {
             defaultpagecontent();
         }
+
+
+
 
         /*  provide available item in database using entity framework model */
 
@@ -37,7 +41,7 @@ namespace CO5027
 
 
                     /*properties for button*/
-                    defaultdisplay.ImageUrl = "~/Images/Database/" + items.ItemDisplay;
+                    defaultdisplay.ImageUrl = "/Images/" + items.ItemDisplay;
                     defaultdisplay.CssClass = "dddib";
                     defaultdisplay.PostBackUrl = string.Format("~/Pages/item.aspx?id={0}", items.Code);
 
@@ -70,7 +74,14 @@ namespace CO5027
             }
 
 
-            protected void default_searchbox_button_Click(object sender, EventArgs e)
+        }
+
+        protected void default_searchbox_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void default_searchbox_button_Click(object sender, EventArgs e)
         {
 
             string itms = default_searchbox_textbox.Text;
@@ -92,7 +103,5 @@ namespace CO5027
 
         }
 
-
-    }
     }
 }

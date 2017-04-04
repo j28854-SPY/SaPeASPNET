@@ -37,7 +37,7 @@
 
                     <tr>
                         <td><%# Eval("ItemName") %></td>
-                        <!-- <td><img src="/Images/Database/ <%# Eval("ItemName") %>" width="70" height:"70" /></td>-->                        
+                        <!-- <td><img src="/Images/ <%# Eval("ItemName") %>" width="70" height:"70" /></td>-->                        
                     </tr>
 
                 </ItemTemplate>
@@ -61,7 +61,7 @@
 
         <div id="default_image_content">
 
-            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/Database/coveralls_banner.jpg" />
+            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/coveralls_banner.jpg" />
 
         </div>
 
