@@ -62,7 +62,7 @@
         <div id="banner">
 
 
-
+            <asp:ContentPlaceHolder ID="banner_cph" runat="server"></asp:ContentPlaceHolder>
 
 
         </div>
@@ -77,6 +77,7 @@
         <div id="content">
 
 
+            <asp:ContentPlaceHolder ID="content_cph" runat="server"></asp:ContentPlaceHolder>
 
 
         </div>
