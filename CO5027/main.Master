@@ -1,8 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="CO5027.main" %>
 
-    <title>HTML Validation | Safety & Protective Equipment</title>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <title>Master | Safety & Protective Equipment</title>
 
     <meta content="text/html" charset="utf-8" http-equiv="Content-Type" />
     <meta name="description" content="Safety & Protective Equipment Homepage, About, Transcription, Contact" />
@@ -21,10 +24,17 @@
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I&callback=initMap" async="async" defer="defer"></script>
 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
-<body>
 
-    <div id="wrapper">
+
+
+
+<body>
+    <form id="mainmaster" runat="server">
+    
+        <div id="wrapper">
 
         <div id="top">
 
@@ -116,5 +126,6 @@
 
     </div>
 
+    </form>
 </body>
 </html>
