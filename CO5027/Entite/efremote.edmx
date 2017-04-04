@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SaPEModelRemote.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="item_pushcart">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="UserCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PushCart" Type="bit" Nullable="false" />
+          <Property Name="ItemCode" Type="int" Nullable="false" />
+          <Property Name="BuyDate" Type="datetime" />
+          <Property Name="Total" Type="int" Nullable="false" />
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="item_table">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="ItemName" Type="varchar" MaxLength="50" />
+          <Property Name="Versions" Type="int" Nullable="false" />
+          <Property Name="ItemDetails" Type="text" />
+          <Property Name="ItemCostBND" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="ItemDisplay" Type="varchar" MaxLength="50" />
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="item_versions">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="ItemName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_item_pushcart_item_table">
+          <End Role="item_table" Type="Self.item_table" Multiplicity="1" />
+          <End Role="item_pushcart" Type="Self.item_pushcart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="item_table">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="item_pushcart">
+              <PropertyRef Name="ItemCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_item_table_item_versions">
+          <End Role="item_versions" Type="Self.item_versions" Multiplicity="1" />
+          <End Role="item_table" Type="Self.item_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="item_versions">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="item_table">
+              <PropertyRef Name="Versions" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SaPEModelRemoteStoreContainer">
+          <EntitySet Name="item_pushcart" EntityType="Self.item_pushcart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="item_table" EntityType="Self.item_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="item_versions" EntityType="Self.item_versions" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_item_pushcart_item_table" Association="Self.FK_item_pushcart_item_table">
+            <End Role="item_table" EntitySet="item_table" />
+            <End Role="item_pushcart" EntitySet="item_pushcart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_item_table_item_versions" Association="Self.FK_item_table_item_versions">
+            <End Role="item_versions" EntitySet="item_versions" />
+            <End Role="item_table" EntitySet="item_table" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SaPEModelRemote" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="item_pushcart">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="UserCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PushCart" Type="Boolean" Nullable="false" />
+          <Property Name="ItemCode" Type="Int32" Nullable="false" />
+          <Property Name="BuyDate" Type="DateTime" Precision="3" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="item_table" Relationship="Self.FK_item_pushcart_item_table" FromRole="item_pushcart" ToRole="item_table" />
+        </EntityType>
+        <EntityType Name="item_table">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Versions" Type="Int32" Nullable="false" />
+          <Property Name="ItemDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCostBND" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ItemDisplay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="item_pushcart" Relationship="Self.FK_item_pushcart_item_table" FromRole="item_table" ToRole="item_pushcart" />
+          <NavigationProperty Name="item_versions" Relationship="Self.FK_item_table_item_versions" FromRole="item_table" ToRole="item_versions" />
+        </EntityType>
+        <EntityType Name="item_versions">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="item_table" Relationship="Self.FK_item_table_item_versions" FromRole="item_versions" ToRole="item_table" />
+        </EntityType>
+        <Association Name="FK_item_pushcart_item_table">
+          <End Role="item_table" Type="Self.item_table" Multiplicity="1" />
+          <End Role="item_pushcart" Type="Self.item_pushcart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="item_table">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="item_pushcart">
+              <PropertyRef Name="ItemCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_item_table_item_versions">
+          <End Role="item_versions" Type="Self.item_versions" Multiplicity="1" />
+          <End Role="item_table" Type="Self.item_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="item_versions">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="item_table">
+              <PropertyRef Name="Versions" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SaPEEntitiesRemote" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="item_pushcart" EntityType="Self.item_pushcart" />
+          <EntitySet Name="item_table" EntityType="Self.item_table" />
+          <EntitySet Name="item_versions" EntityType="Self.item_versions" />
+          <AssociationSet Name="FK_item_pushcart_item_table" Association="Self.FK_item_pushcart_item_table">
+            <End Role="item_table" EntitySet="item_table" />
+            <End Role="item_pushcart" EntitySet="item_pushcart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_item_table_item_versions" Association="Self.FK_item_table_item_versions">
+            <End Role="item_versions" EntitySet="item_versions" />
+            <End Role="item_table" EntitySet="item_table" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SaPEModelRemoteStoreContainer" CdmEntityContainer="SaPEEntitiesRemote">
+          <EntitySetMapping Name="item_pushcart">
+            <EntityTypeMapping TypeName="SaPEModelRemote.item_pushcart">
+              <MappingFragment StoreEntitySet="item_pushcart">
+                <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+                <ScalarProperty Name="PushCart" ColumnName="PushCart" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="item_table">
+            <EntityTypeMapping TypeName="SaPEModelRemote.item_table">
+              <MappingFragment StoreEntitySet="item_table">
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="Versions" ColumnName="Versions" />
+                <ScalarProperty Name="ItemDetails" ColumnName="ItemDetails" />
+                <ScalarProperty Name="ItemCostBND" ColumnName="ItemCostBND" />
+                <ScalarProperty Name="ItemDisplay" ColumnName="ItemDisplay" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="item_versions">
+            <EntityTypeMapping TypeName="SaPEModelRemote.item_versions">
+              <MappingFragment StoreEntitySet="item_versions">
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
