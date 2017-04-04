@@ -1,0 +1,206 @@
+﻿/* begin main */
+html							{	background-image:url('../Images');	}
+body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+body img						{		}
+
+
+/* begin containers */
+
+
+#wrapper 						{  	 width:960px; margin:0px auto; background-image:url(); clear:both; position:relative;}
+
+/* end containers */
+
+/* begin top */
+		
+#top	 						{  	background-color:black; width:100%; overflow:hidden; border-bottom:10px #666666 groove; padding:30px 0 0 0;;}
+#top img						{	width:100%; overflow:hidden; 	}
+
+/* end top */
+
+
+/* begin navigator */
+
+#topnav 						{ 	width:100%; background-image:url('../Images/index.jpg'); clear:both; top:1px; z-index:1; text-align:center; padding:20px 0 10px 0; border-bottom:10px #666666 groove; }						  
+#topnav ul 						{	background-image:url(); }
+						
+#topnav ul li					{	display:inline; text-align:center;  	}
+#topnav ul li a					{	padding:10px 50px; text-decoration:none; margin:0 20px 0 20px; border:medium #000000 double; }
+
+#topnav a:link		            {	Color:gold; border-color:goldenrod; background-color:grey;	}
+#topnav a:visited				{	Color:white; border-color:goldenrod; background-color:black;	}
+#topnav a:active		        {	Color:white; border-color:goldenrod; background-color:black;	}
+#topnav a:hover					{	Color:gold; border-color:goldenrod; background-color:grey;	}
+#topnav a:focus					{	Color:white; border-color:goldenrod; background-color:black;	}
+
+/* end navigator */
+
+
+/* begin banner  */
+
+#banner_cph						{   width:960px;		}
+#banner img						{
+}
+
+/* end banner  */
+
+
+
+#subbanner 						{ 	width:100%; background-image:url('../Images/grey-white.jpg'); padding:15px 0; overflow:hidden;  }
+#subbanner h3					{	color:black; font-size:16px; font-weight:bold; text-align:center; line-height:100%; text-shadow:initial;	}
+
+/*  begin content */
+
+
+
+/*  start default */
+
+#default_content                {   background-image:url('../Images/ccbg1.jpg');    }
+#default_searchbox1             {   width:100%;     }
+#default_searchbox_label        {      }
+.default_searchbox_label        {   width:100%; font-size:30px; text-align:center; }
+.default_searchbox_textbox      {   width:70%; height:30px; margin-left: 0px; } 
+.default_searchbox_button       {   float:left; width:20%; height:30px;  }            
+
+
+.default_available_label_text   {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%;   }
+
+
+#default_data_list1             {       }
+.ddlic                          {   width:100%;  }
+.ddlic                          {   width:228px;   }
+
+
+#default_image_content img      {   width:960px; height:300px;    }
+
+
+.default_item_panel1            {      }            
+#default_item_panel1            {      }
+#banner_cph_itempanel div       {   width:240px; height:250px; float:left; text-align:center; background-image:url('../Images/ccbg1.jpg');  }
+
+.dddiln                         {   float:left; text-align:center; margin-right:20px; }
+
+.dddilc                         {   float:left; text-align:center;   }
+
+.dddib                          {   float:left; width:220px; height:220px;   }
+
+
+
+/*  stop default */
+
+
+
+
+
+
+/*  start contact */
+/*  start contactleftside */
+
+#contactcontent                 {   }
+
+#contactleftside                {   float:left; width:350px; height:450px; background-image:url('../Images/ccbg1.jpg');  }
+#contactleftsidetable           {   margin-top:70px;    }
+
+#contactRFVnamelink             {   margin-left:54px;   }
+#contactnametextboxlink         {   margin-left:100px;   }
+
+#contactemailREVlink            {   margin-left:54px;   }
+#contactemailtextboxlink        {   margin-left:50px;   }
+
+#contactsubjectRFVlink          {   margin-left:54px;   }
+#contactsubjecttextboxlink      {   margin-left:90px;   }
+
+#contactmessageRFVlink          {   margin-left:54px;   }
+#contactmessagetextboxlink      {   margin-left:81px;   }
+
+
+
+#contactRFVnamelink             {   white-space:pre-line;  }
+
+/*  stop contactleftside */
+
+
+
+/*  start contactrightside */
+
+#contactrightside               {   float:right;    }
+#map                            {   width:610px; height:450px; float:right;    }
+#staticmap                      {   width:610px; height:450px; float:right;    }
+
+
+/*  stop contactrightside */
+/*  stop contact content*/
+
+
+
+
+
+/*  start database_item_table content*/
+
+#dbitemtablecontent              {  display:inline; }      
+
+#dbitemtablescontentleftside     {   float:left; width:320px;  }
+#dbitemtablecontent              {   width:960px;   }
+#dbitemtablescontentrightside    {   float:left; width:320px;     }
+
+
+/*  stop database_merchandise_tabel content*/
+
+
+
+
+/*  start database_item_versions content*/
+
+#dbitemtversionscontentleftside   {   float:left; width:320px;  }
+#dbitemversionscontent            {   float:left; width:320px;    }
+#dbitemversionscontentrightside   {      }
+
+/*  stop database_item_versions content*/
+
+
+
+/*  start admin_database content*/
+
+.admin_gv_mta_class             {   width:960px;  }
+.admin_label_class              {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
+.admin_label_class1             {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
+
+
+#upload_item_data_page_image    {     }
+
+
+/*  stop admin_database content*/
+
+/* end content */
+
+
+
+
+
+/* begin footer */
+
+#footer 						{  	background-image:url('../Images/BGWrap.png'); clear:both	 }
+
+
+#footermiddleside               {   width:330px; float:left;    }
+#footermiddleside p             {   text-align:left;     }
+
+#footerrightside                {   float:right; margin:0 10px 0 0;  color:#FFFFFF; margin:5px 5px 10px 0; width:230px;   }
+#footerrightside li             {   display:inline; } 
+#footerrightside img            {   display:inline; float:right; width:34px; height:34px; margin:0 10px 0 0px; text-align:left; }      
+    
+#facebooklink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 	
+#twitterlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
+#bloggerlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
+
+#footerleftside	                {   width:230px; float:left;  }	
+#footerleftside li              {   }
+/* end footer */
+
+
+
+
+
+
+
+/* end main */
