@@ -43,6 +43,7 @@ namespace CO5027
                     /*properties for button*/
                     defaultdisplay.ImageUrl = "/Images/" + items.ItemDisplay;
                     defaultdisplay.CssClass = "dddib";
+                    defaultdisplay.AlternateText = "ServerPic";
                     defaultdisplay.PostBackUrl = string.Format("~/Pages/item.aspx?id={0}", items.Code);
 
 

@@ -61,7 +61,7 @@
 
         <div id="default_image_content">
 
-            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/coveralls_banner.jpg" />
+            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/coveralls_banner.jpg" alt="defaultbanner"/>
 
         </div>
 
@@ -89,7 +89,7 @@
 
          </div>
   
-    </div
+    </div>
 
 
 </asp:Content>
