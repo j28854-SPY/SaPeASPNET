@@ -41,10 +41,10 @@ namespace CO5027
 
 
                     /*properties for button*/
-                    defaultdisplay.ImageUrl = "/Images/" + items.ItemDisplay;
+                    defaultdisplay.ImageUrl = "~/Images/" + items.ItemDisplay;
                     defaultdisplay.CssClass = "dddib";
                     defaultdisplay.AlternateText = "ServerPic";
-                    defaultdisplay.PostBackUrl = string.Format("~/Pages/item.aspx?id={0}", items.Code);
+                    defaultdisplay.PostBackUrl = string.Format("~/Pages/item.aspx?Code={0}", items.Code);
 
 
                     /*properties for label name*/
@@ -60,9 +60,9 @@ namespace CO5027
 
 
                     itemwithpanel.Controls.Add(defaultdisplay);
-                    itemwithpanel.Controls.Add(new Literal { Text = "<br/>" });
+                    itemwithpanel.Controls.Add(new Literal { Text = "" });
                     itemwithpanel.Controls.Add(deafultlblitemname);
-                    itemwithpanel.Controls.Add(new Literal { Text = "<br/>" });
+                    itemwithpanel.Controls.Add(new Literal { Text = "" });
                     itemwithpanel.Controls.Add(defaultlblcost);
 
                     //Add dynamic controls to static control
