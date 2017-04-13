@@ -22,6 +22,7 @@ namespace CO5027.Entite
     
         public string ItemName { get; set; }
         public int Code { get; set; }
+        public string ItemDisplay { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_table> item_table { get; set; }

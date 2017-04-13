@@ -72,7 +72,7 @@
 
         <div id="map">
 
-             <asp:ImageMap ID="staticmap" runat="server" ImageUrl="https://maps.googleapis.com/maps/api/staticmap?center=4.885,114.931&zoom=15&size=610x450&maptype=roadmap&markers=color:blue%7Clabel:S%7C4.885,114.931&markers=color:green%7Clabel:G%7C4.888,114.939&key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I">
+             <asp:ImageMap ID="staticmap" runat="server" ImageUrl="https://maps.googleapis.com/maps/api/staticmap?center=4.885,114.931&zoom=15&size=610x450&maptype=roadmap&markers=color:blue%7Clabel:S%7C4.885,114.931&markers=color:green%7Clabel:G%7C4.888,114.939&key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I" AlternateText="staticpic">
 
             </asp:ImageMap>
 

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'c:\Users\s_241\OneDrive\Documents\Visual Studio 2015\Projects\CO5027\CO5027\Entite\efremote.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\s_241\OneDrive\Documents\Visual Studio 2015\Projects\CO5027\CO5027\Entite\efremote.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
