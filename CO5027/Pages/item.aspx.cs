@@ -27,6 +27,14 @@ namespace CO5027.Pages
                 item_table item = model.retrieve_item(Code);
 
 
+                /*  dropdownlist option up to 5 */
+
+                int[] itemtopushcart = Enumerable.Range(1, 5).ToArray();
+                itempgddl.DataSource = itemtopushcart;
+                itempgddl.AppendDataBoundItems = true;
+                itempgddl.DataBind();
+
+
                 /*  similar to default page using code to provide details in item page */
 
                 itempgpic.ImageUrl = "~/Images/" + item.ItemDisplay;
@@ -34,18 +42,13 @@ namespace CO5027.Pages
 
                 itempglabel.Text = item.ItemName;
                 itempginfolabel.Text = item.ItemDetails;
-                itempgcostlabel.Text = "Cost for each item: $ " + item.ItemCostBND;
+                itempgcostlabel.Text = "Cost BND: $ " + item.ItemCostBND;
 
-                itempgindata.Text = item.Code.ToString();
+                itempgindata.Text = "Item Version Code: -           " + item.Code.ToString();
 
 
 
-                /*  dropdownlist option up to 5 */
-
-                int[] itemtopushcart = Enumerable.Range(1, 5).ToArray();
-                itempgddl.DataSource = itemtopushcart;
-                itempgddl.AppendDataBoundItems = true;
-                itempgddl.DataBind();
+               
             }
         }
 

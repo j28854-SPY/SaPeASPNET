@@ -49,6 +49,33 @@ namespace CO5027.Pages {
         protected global::System.Web.UI.WebControls.Label itempgcostlabel;
         
         /// <summary>
+        /// itempgcostresult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label itempgcostresult;
+        
+        /// <summary>
+        /// itempgindata control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label itempgindata;
+        
+        /// <summary>
+        /// itempgcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label itempgcode;
+        
+        /// <summary>
         /// itempgddl control.
         /// </summary>
         /// <remarks>
@@ -65,32 +92,5 @@ namespace CO5027.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button itempgcostbutton;
-        
-        /// <summary>
-        /// itempgcostresult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label itempgcostresult;
-        
-        /// <summary>
-        /// itempgcode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label itempgcode;
-        
-        /// <summary>
-        /// itempgindata control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label itempgindata;
     }
 }

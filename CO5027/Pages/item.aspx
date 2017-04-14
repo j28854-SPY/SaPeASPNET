@@ -3,37 +3,40 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
 
+    <div id="itempagecontent">
 
-    <table class="itempgtable">
 
-        <tr>
-            <td><asp:Image ID="itempgpic" runat="server" CssClass="itempgpiccss" /></td>
+
+      
+                <div id="itempgdiv1"><asp:Image ID="itempgpic" runat="server" CssClass="itempgpiccss" /></div>
             
-            <td><h3><asp:Label ID="itempglabel" runat="server" CssClass="itempglabelcss"></asp:Label></h3></td>
-        </tr>
+                <div id="itempgdiv2"><h3><asp:Label ID="itempglabel" runat="server" CssClass="itempglabelcss"></asp:Label></h3></div>
+           
 
-        <tr>
-            <td><asp:Label runat="server" ID="itempginfolabel" CssClass="itempginfolabelcss"></asp:Label></td>           
-        </tr>
-
-        <tr>
-            <td><asp:Label runat="server" ID="itempgcostlabel" CssClass="itempgcostcss"></asp:Label></td>
-            <td><asp:DropDownList runat="server" ID="itempgddl"></asp:DropDownList></td>
-            <td><asp:Button runat="server" Text="Add To PushCart" ID="itempgcostbutton"></asp:Button></td>
-            <td><asp:Label runat="server" ID="itempgcostresult"></asp:Label></td>
-        </tr>
-
-        <tr>
-            <td><h1><asp:Label runat="server" ID="itempgcode"></asp:Label></h1></td>
-        </tr>
-
-        <tr>
-            <td><asp:Label runat="server" ID="itempgindata" CssClass="itempgindatacss" Text="In Store Now BOi"></asp:Label></td>
-        </tr>
+         
+                <div id="itempgdiv3"><asp:Label runat="server" ID="itempginfolabel" CssClass="itempginfolabelcss"></asp:Label></div>           
 
 
-    </table>
+         
+                <div id="itempgdiv4"><asp:Label runat="server" ID="itempgcostlabel" CssClass="itempgcostcss"></asp:Label></div>
+                <div id="itempgdiv7"><asp:Label runat="server" ID="itempgcostresult" CssClass="itempgcostresultcss"></asp:Label></div>
+                <div id="itempgdiv9"><asp:Label runat="server" ID="itempgindata" CssClass="itempgindatacss" Text="In Store Now BOi"></asp:Label></div>
+                <div id="itempgdiv8"><h1><asp:Label runat="server" ID="itempgcode"></asp:Label></h1></div>
+                <div id="itempgdiv5"><asp:DropDownList runat="server" ID="itempgddl" CssClass="itempgddlcss"></asp:DropDownList></div>
+                <div id="itempgdiv6"><asp:Button runat="server" Text="Add To PushCart" ID="itempgcostbutton" CssClass="itempgcostbuttoncss"></asp:Button></div>
+                
+      
+
+     
+                
     
+
+     
+                
+
+
+
+    </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content_cph" runat="server">
