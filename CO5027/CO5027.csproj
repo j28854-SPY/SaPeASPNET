@@ -79,24 +79,24 @@
     <Content Include="about.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="Entite\efremote.Context.tt">
+    <Content Include="Entite\efsaperemotedb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>efremote.Context.cs</LastGenOutput>
-      <DependentUpon>efremote.edmx</DependentUpon>
+      <DependentUpon>efsaperemotedb.edmx</DependentUpon>
+      <LastGenOutput>efsaperemotedb.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Entite\efremote.tt">
+    <Content Include="Entite\efsaperemotedb.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>efremote.edmx</DependentUpon>
-      <LastGenOutput>efremote.cs</LastGenOutput>
+      <DependentUpon>efsaperemotedb.edmx</DependentUpon>
+      <LastGenOutput>efsaperemotedb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="main.Master" />
-    <EntityDeploy Include="Entite\efremote.edmx">
+    <EntityDeploy Include="Entite\efsaperemotedb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>efremote.Designer.cs</LastGenOutput>
+      <LastGenOutput>efsaperemotedb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Entite\efremote.edmx.diagram">
-      <DependentUpon>efremote.edmx</DependentUpon>
+    <Content Include="Entite\efsaperemotedb.edmx.diagram">
+      <DependentUpon>efsaperemotedb.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\1525588_co5027_asp.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -144,7 +144,9 @@
     <Content Include="Style\template.css" />
     <Content Include="template.html" />
     <Content Include="transcription.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -168,31 +170,31 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entite\efremote.Context.cs">
+    <Compile Include="Entite\efsaperemotedb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>efremote.Context.tt</DependentUpon>
+      <DependentUpon>efsaperemotedb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entite\efremote.cs">
+    <Compile Include="Entite\efsaperemotedb.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>efremote.tt</DependentUpon>
+      <DependentUpon>efsaperemotedb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entite\efremote.Designer.cs">
+    <Compile Include="Entite\efsaperemotedb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>efremote.edmx</DependentUpon>
+      <DependentUpon>efsaperemotedb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entite\item_pushcart.cs">
-      <DependentUpon>efremote.tt</DependentUpon>
+      <DependentUpon>efsaperemotedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Entite\item_pushcart_model.cs" />
     <Compile Include="Entite\item_table.cs">
-      <DependentUpon>efremote.tt</DependentUpon>
+      <DependentUpon>efsaperemotedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Entite\item_table_model.cs" />
     <Compile Include="Entite\item_versions.cs">
-      <DependentUpon>efremote.tt</DependentUpon>
+      <DependentUpon>efsaperemotedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Entite\item_versions_model.cs" />
     <Compile Include="Global.asax.cs">

@@ -15,7 +15,7 @@
             <asp:Button ID="default_searchbox_button" runat="server" Text="Search For Item Equipment" OnClick="default_searchbox_button_Click" CssClass="default_searchbox_button" />
 
 
-            <asp:SqlDataSource ID="default_serach" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemote %>" SelectCommand="SELECT * FROM [item_table]"></asp:SqlDataSource>
+            
 
             <asp:Repeater ID="default_repeater1" runat="server">
 

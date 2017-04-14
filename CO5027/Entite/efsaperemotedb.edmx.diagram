@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="acb471ddf87d4eaa8f91afddd671f13a" Name="Diagram1">
+      <Diagram DiagramId="527598659ba54f1fa279a14902ef153c" Name="Diagram1">
         <EntityTypeShape EntityType="SaPEModelRemote.item_pushcart" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SaPEModelRemote.item_table" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SaPEModelRemote.item_versions" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
