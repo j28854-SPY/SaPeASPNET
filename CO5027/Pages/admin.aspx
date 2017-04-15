@@ -8,7 +8,7 @@
     <div id="admin_gridview1">
 
 
-        <asp:Label ID="admin_lbl_itemtable" class="admin_label_class" runat="server" Text="Table of Item in Sql Server Database" Width="100%"></asp:Label>
+        <asp:Label ID="admin_lbl_itemtable" runat="server" Text="Table of Item in Sql Server Database" Width="100%" CssClass="admin_label_class"></asp:Label>
 
         <hr />
        

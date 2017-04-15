@@ -13,6 +13,10 @@
 
 
 
+        <asp:Label ID="contactlbltitle" runat="server" Text="Contact Our Shop" CssClass="admin_label_class" Width="100%"></asp:Label>
+
+       
+        <hr />
     <!--begin contactcontent leftside-->
 
 
@@ -78,14 +82,14 @@
 
         </div>
 
-
+        
     </div>
-
+        
     <!--end contactcontent rightside-->
-
+       
 
         <div id="contactbelowcontent">
-
+            <hr />
 
             <asp:Label ID="contactbelowcontentlabel" runat="server" Text="Our Shop Location" Width="100%" CssClass="contactbelowcontentlabel"></asp:Label>
 
@@ -93,7 +97,97 @@
         </div>
 
 
+        <asp:Label ID="contactlbladdress1" runat="server" Text="And" CssClass="admin_label_class" Width="100%"></asp:Label>
+        <asp:Label ID="contactlbladdress2" runat="server" Text="Our Address" CssClass="admin_label_class" Width="100%"></asp:Label>
 
+        <hr />
+
+
+
+        <div id="contactaddressdivmain">
+
+
+
+            <div id="contactaddressdiv0">
+
+                <asp:Label ID="contactadd0" runat="server" Text="Address" CssClass="contactaddfltitlecss"></asp:Label>
+
+            </div>
+
+
+            <div id="contactaddressdiv1">
+
+                <asp:Label ID="contactadd1" runat="server" Text="Plaza Abdul Razak" CssClass="contactaddflcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contactaddressdiv2">
+
+                <asp:Label ID="contactadd2" runat="server" Text="Jalan Laksamana Abdul Razak," CssClass="contactaddflcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contactaddressdiv3">
+
+                <asp:Label ID="contactadd3" runat="server" Text="Bandar Seri Begawan," CssClass="contactaddflcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contactaddressdiv4">
+
+                <asp:Label ID="contactadd4" runat="server" Text="Negara Brunei Darussalam" CssClass="contactaddflcss"></asp:Label>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div id="contacttelephonedivmain">
+
+
+            <div id="contacttelediv0">
+
+                <asp:Label ID="contacttele0" runat="server" Text="Telephone Number" CssClass="contacttelefrtitlecss"></asp:Label>
+
+            </div>
+
+
+             <div id="contacttelediv1">
+
+                <asp:Label ID="contacttele1" runat="server" Text="" CssClass="contacttelefrcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contacttelediv2">
+
+                <asp:Label ID="contacttele2" runat="server" Text="Phone:+673 223 8816" CssClass="contacttelefrcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contacttelediv3">
+
+                <asp:Label ID="contacttele3" runat="server" Text="" CssClass="contacttelefrcss"></asp:Label>
+
+            </div>
+
+
+            <div id="contacttelediv4">
+
+                <asp:Label ID="contacttele4" runat="server" Text="Plaza Abdul Razak" CssClass="contacttelefrcss"></asp:Label>
+
+            </div>
+
+
+        </div>
 
 
     </div>
@@ -101,6 +195,7 @@
     <!--end contactcontent divider of wrapper-->
 
     <!--end wrapper container-->
+    
 
 
 </asp:Content>

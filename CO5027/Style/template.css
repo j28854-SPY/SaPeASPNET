@@ -112,7 +112,7 @@ body img						{		}
 
 
 /*  start contact */
-/*  start contactleftside */
+
 
 #contactcontent                 {   }
 
@@ -135,11 +135,7 @@ body img						{		}
 
 #contactRFVnamelink             {   white-space:pre-line;  }
 
-/*  stop contactleftside */
 
-
-
-/*  start contactrightside */
 
 #contactrightside               {   float:right;    }
 #map                            {   width:610px; height:450px; float:right;    }
@@ -147,10 +143,20 @@ body img						{		}
 
 
 
-
+#contactbelowcontent            {   width:960px; }
 .contactbelowcontentlabel       {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%;   }
 
-/*  stop contactrightside */
+
+#contactaddressdivmain          {   float:left; width:45%;  }
+.contactaddfltitlecss           {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; }
+.contactaddflcss                {   text-align:center; font-family:Constantia; font-style:italic; }
+
+
+#contacttelephonedivmain        {   float:right; width:45%;  }
+.contacttelefrtitlecss          {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; }
+.contacttelefrcss               {   text-align:center; font-family:Constantia; font-style:italic; }
+
+
 /*  stop contact content*/
 
 
