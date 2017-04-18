@@ -1,7 +1,8 @@
-﻿<%@ Page Title="Item Details | Safety & Protective Equipment" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="item.aspx.cs" Inherits="CO5027.Pages.item" %>
+﻿<%@ Page Title="Item Details | Safety & Protective Equipment" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="item_click.aspx.cs" Inherits="CO5027.Pages.Administer.item_click" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
+
 
     <div id="itempagecontent">
 
@@ -37,6 +38,7 @@
 
 
     </div>
+
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content_cph" runat="server">

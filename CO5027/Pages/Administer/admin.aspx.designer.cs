@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CO5027.Pages {
+namespace CO5027.Pages.Administer {
     
     
     public partial class admin {

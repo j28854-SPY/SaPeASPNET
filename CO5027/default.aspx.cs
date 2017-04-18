@@ -44,7 +44,7 @@ namespace CO5027
                     defaultdisplay.ImageUrl = "~/Images/" + items.ItemDisplay;
                     defaultdisplay.CssClass = "dddib";
                     defaultdisplay.AlternateText = "ServerPic";
-                    defaultdisplay.PostBackUrl = string.Format("~/Pages/item.aspx?Code={0}", items.Code);
+                    defaultdisplay.PostBackUrl = string.Format("~/Pages/Administer/item_click.aspx?Code={0}", items.Code);
 
 
                     /*properties for label name*/

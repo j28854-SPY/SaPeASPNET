@@ -4,6 +4,9 @@ body 							{   background-image:url(); background-repeat: no-repeat; background
 body img						{		}
 
 
+.ulnobullet                     {   list-style-type: none;  }
+
+
 /* begin containers */
 
 

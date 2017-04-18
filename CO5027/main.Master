@@ -38,7 +38,7 @@
 
         <div id="top">
 
-            <ul>
+            <ul class="ulnobullet">
                 <li><a href="/Pages/login.aspx">Login</a></li>
                 <li><a href="/Pages/register.aspx">Register</a></li>
             </ul>
@@ -49,7 +49,7 @@
         <!-- Placing my navigation on top by using the codes below -->
 
         <div id="topnav">
-            <ul>
+            <ul class="ulnobullet">
                 <li><a href="/default.aspx">Home</a></li>
                 <li><a href="/about.aspx">About</a></li>
                 <li><a href="/transcription.aspx">Transcription</a></li>
@@ -90,7 +90,7 @@
 
             <div id="footerleftside">
 
-                <ul>
+                <ul class="ulnobullet">
                     <li><a href="https://validator.w3.org/check?uri=referer">Validate HTML</a></li>
                     <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></li>
                     <li><a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a></li>
@@ -101,10 +101,10 @@
 
             <div id="footermiddleside">
 
-                <ul>
+                <ul class="ulnobullet">
 
                     <li>&copy;Copyright 2017 J28854-1525588</li>
-                    <li><a href="/Pages/admin.aspx">&copy;Safety & Protective Equipment Admin</a></li>
+                    <li><a href="/Pages/Administer/admin.aspx">&copy;Safety & Protective Equipment Admin</a></li>
 
                 </ul>
 
@@ -113,7 +113,7 @@
 
             <div id="footerrightside">
 
-                <ul>
+                <ul class="ulnobullet">
                     <li><a href="http://www.facebook.com/"><img src="/Images/facebook-icon.png" alt="facebook"></a></li>
                     <li><a href="https://twitter.com/"><img src="/Images/twitter-icon.png" alt="twitter"></a></li>
                     <li><a href="http://www.blogger.com"><img src="/Images/blog.png" alt="blog"></a></li>

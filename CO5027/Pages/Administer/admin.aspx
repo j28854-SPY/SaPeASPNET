@@ -1,10 +1,9 @@
-﻿<%@ Page Title="Admin | Safety & Protective Equipment" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="CO5027.Pages.admin" %>
+﻿<%@ Page Title="Admin | Safety & Protective Equipment" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="CO5027.Pages.Administer.admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
 
 
-    
     <div id="admin_gridview1">
 
 
@@ -111,7 +110,6 @@
 
 
     <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/item_upload.aspx">Upload here :) </asp:LinkButton>
-
 
 
 </asp:Content>

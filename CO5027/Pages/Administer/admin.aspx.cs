@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CO5027.Pages
+namespace CO5027.Pages.Administer
 {
     public partial class admin : System.Web.UI.Page
     {

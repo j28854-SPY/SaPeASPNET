@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using CO5027.Entite;
 
-namespace CO5027.Pages
+namespace CO5027.Pages.Administer
 {
-    public partial class item : System.Web.UI.Page
+    public partial class item_click : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -48,7 +48,7 @@ namespace CO5027.Pages
 
 
 
-               
+
             }
         }
 
