@@ -52,5 +52,17 @@ namespace CO5027.Pages.Administer
             }
         }
 
+        /*  begin add push to cart */
+
+
+        protected void itempgaddbutton_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+
+
+            
     }
 }

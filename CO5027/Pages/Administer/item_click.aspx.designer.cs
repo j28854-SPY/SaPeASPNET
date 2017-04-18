@@ -85,12 +85,12 @@ namespace CO5027.Pages.Administer {
         protected global::System.Web.UI.WebControls.DropDownList itempgddl;
         
         /// <summary>
-        /// itempgcostbutton control.
+        /// itempgaddbutton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button itempgcostbutton;
+        protected global::System.Web.UI.WebControls.Button itempgaddbutton;
     }
 }

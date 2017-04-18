@@ -109,7 +109,7 @@
 
 
 
-    <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/item_upload.aspx">Upload here :) </asp:LinkButton>
+    <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administer/item_to_store.aspx">Upload here :) </asp:LinkButton>
 
 
 </asp:Content>
