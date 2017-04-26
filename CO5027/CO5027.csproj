@@ -130,6 +130,8 @@
       <LastGenOutput>efsaperemotedb.cs</LastGenOutput>
     </Content>
     <Content Include="Images\googles_1.jpg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\welcomebanner.jpg" />
     <Content Include="packages.config" />
     <Content Include="main.Master" />
     <EntityDeploy Include="Entite\efsaperemotedb.edmx">
@@ -144,6 +146,8 @@
     <Content Include="Pages\Administer\admin.aspx" />
     <Content Include="Pages\Administer\item_click.aspx" />
     <Content Include="Pages\Administer\item_to_store.aspx" />
+    <Content Include="Pages\Authentication\signin.aspx" />
+    <Content Include="Pages\Authentication\signup.aspx" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -269,6 +273,20 @@
     </Compile>
     <Compile Include="Pages\Administer\item_to_store.aspx.designer.cs">
       <DependentUpon>item_to_store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Authentication\signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Authentication\signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Authentication\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Authentication\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="transcription.aspx.cs">

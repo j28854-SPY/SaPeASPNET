@@ -23,7 +23,7 @@ namespace CO5027
             smtpUser.UseDefaultCredentials = false;
             smtpUser.Host = "smtp.gmail.com";
             smtpUser.Port = 587;
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("testlcbcompsci@gmail.com", "!T3st!email");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("testlcbcompsci@gmail.com", "!3Mail!test");
 
             smtpUser.Credentials = credentials;
 
