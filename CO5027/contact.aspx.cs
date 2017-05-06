@@ -20,7 +20,7 @@ namespace CO5027
         {
             SmtpClient smtpUser = new SmtpClient();
             smtpUser.EnableSsl = true;
-            smtpUser.UseDefaultCredentials = false;
+            smtpUser.UseDefaultCredentials = false;            
             smtpUser.Host = "smtp.gmail.com";
             smtpUser.Port = 587;
             System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("testlcbcompsci@gmail.com", "!3Mail!test");
@@ -28,6 +28,7 @@ namespace CO5027
             smtpUser.Credentials = credentials;
 
             MailMessage msg = new MailMessage("testlcbcompsci@gmail.com", contactemailtextboxlink.Text);
+            msg.To.Add("testlcbcompsci@gmail.com");
             msg.BodyEncoding = System.Text.Encoding.GetEncoding("utf-8");
             msg.Subject = "Name: " + contactnametextboxlink.Text + " Subject: " + contactsubjecttextboxlink.Text;
             msg.Body = contactmessagetextboxlink.Text;

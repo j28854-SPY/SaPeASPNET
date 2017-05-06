@@ -10,6 +10,11 @@ body img						{		}
 .signincss                      {   float: left; margin: 0; border: none; padding: 10px; background: #fff; border: 1px solid #ddd; }
 .signupcss                      {   float: left; margin: 0; border: none; padding: 10px; background: #fff; border: 1px solid #ddd;  }
 
+
+#signup_leftside_content        {   width:20%; float:left; }
+#signup_leftside2_content       {   width:20%; float:left; }
+
+.signup_titlecss                {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%;   }
 /* begin containers */
 
 
