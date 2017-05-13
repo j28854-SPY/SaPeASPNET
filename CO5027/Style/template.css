@@ -6,17 +6,17 @@ body img						{		}
 .ulnotify                       {   float:left; Color:gold; border-color:goldenrod; background-color:grey; list-style-type: none; }
 .ulnobullet                     {   list-style-type: none;  }
 
-
+#signup_content                 {   width:100%; }
 .signincss                      {   float: left; margin: 0; border: none; padding: 10px; background: #fff; border: 1px solid #ddd; }
 .signupcss                      {   float: left; margin: 0; border: none; padding: 10px; background: #fff; border: 1px solid #ddd;  }
 
 
-#signup_leftside_content        {   width:20%; float:left; Margin:0px 0px 0px 0px; }
+#signup_leftside_content        {   width:30%; float:left; Margin:0px 0px 0px 0px; }
 .signup_labelcss                {   Margin:0px 0px 3px 0px;}
 
 
 
-#signup_leftside2_content       {   width:20%; float:left;  }
+#signup_leftside2_content       {   width:70%; float:left;  }
 
 #signin_leftside_content        {   width:20%; float:left; }
 #signin_leftside2_content       {   width:20%; float:left; }

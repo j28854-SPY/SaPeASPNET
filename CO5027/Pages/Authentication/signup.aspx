@@ -243,7 +243,7 @@
                          
                 <tr>
                     <td><asp:TextBox ID="signup_email_address" runat="server"></asp:TextBox></td>
-                    <td><asp:RegularExpressionValidator ID="REV_signup_email_address" runat="server" ErrorMessage="Please Enter Valid Email Address" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator></td>
+                    <td><asp:RegularExpressionValidator ID="REV_signup_email_address" runat="server" ErrorMessage="Please Enter Valid Email Address" ControlToValidate="signup_email_address" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator></td>
                     <td><asp:RequiredFieldValidator ID="RFV_signup_email_address" runat="server" ErrorMessage="Please Enter Valid Email Address" ControlToValidate="signup_email_address"></asp:RequiredFieldValidator></td>             
                 </tr>
 
