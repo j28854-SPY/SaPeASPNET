@@ -31,6 +31,15 @@ namespace CO5027.Pages.Authentication {
         protected global::System.Web.UI.WebControls.TextBox signup_username;
         
         /// <summary>
+        /// RFV_signup_username control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_username;
+        
+        /// <summary>
         /// signup_password control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace CO5027.Pages.Authentication {
         protected global::System.Web.UI.WebControls.TextBox signup_password;
         
         /// <summary>
+        /// RFV_signup_password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_password;
+        
+        /// <summary>
         /// signup_password_confirm control.
         /// </summary>
         /// <remarks>
@@ -47,6 +65,114 @@ namespace CO5027.Pages.Authentication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox signup_password_confirm;
+        
+        /// <summary>
+        /// RFV_signup_password_confirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_password_confirm;
+        
+        /// <summary>
+        /// signup_surname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signup_surname;
+        
+        /// <summary>
+        /// RFV_signup_surname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_surname;
+        
+        /// <summary>
+        /// signup_forename control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signup_forename;
+        
+        /// <summary>
+        /// RFV_signup_forename control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_forename;
+        
+        /// <summary>
+        /// signup_address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signup_address;
+        
+        /// <summary>
+        /// RFV_signup_address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_address;
+        
+        /// <summary>
+        /// signup_zipcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signup_zipcode;
+        
+        /// <summary>
+        /// RFV_signup_zipcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_zipcode;
+        
+        /// <summary>
+        /// signup_email_address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signup_email_address;
+        
+        /// <summary>
+        /// REV_signup_email_address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_signup_email_address;
+        
+        /// <summary>
+        /// RFV_signup_email_address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_signup_email_address;
         
         /// <summary>
         /// signup_literal_error control.

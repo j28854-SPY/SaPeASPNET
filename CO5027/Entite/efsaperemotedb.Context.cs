@@ -28,5 +28,6 @@ namespace CO5027.Entite
         public virtual DbSet<item_pushcart> item_pushcart { get; set; }
         public virtual DbSet<item_table> item_table { get; set; }
         public virtual DbSet<item_versions> item_versions { get; set; }
+        public virtual DbSet<item_customer> item_customer { get; set; }
     }
 }

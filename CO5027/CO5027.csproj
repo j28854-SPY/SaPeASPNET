@@ -231,6 +231,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>efsaperemotedb.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entite\item_customer.cs">
+      <DependentUpon>efsaperemotedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entite\item_customer_model.cs" />
     <Compile Include="Entite\item_pushcart.cs">
       <DependentUpon>efsaperemotedb.tt</DependentUpon>
     </Compile>

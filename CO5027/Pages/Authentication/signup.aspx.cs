@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CO5027.Entite;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
@@ -45,17 +46,19 @@ namespace CO5027.Pages.Authentication
 
 
 
-                       /* UserDetail userDetail = new UserDetail
-                        {
-                            Address = txtAddress.Text,
-                            FirstName = txtFirstName.Text,
-                            LastName = txtLastName.Text,
-                            Guid = user.Id,
-                            PostalCode = Convert.ToInt32(txtPostalCode.Text)
-                        };
+                         item_customer customerDetails = new item_customer
+                         {
+                             AUQCode = user.Id,
+                             Surname = signup_surname.Text,
+                             Forename = signup_forename.Text,
+                             Address = signup_address.Text,
+                             ZipCode = Convert.ToInt32(signup_zipcode.Text),
+                             EmailAddress = signup_email_address.Text
 
-                        UserDetailModel model = new UserDetailModel();
-                        model.InsertUserDetail(userDetail); */
+                         };
+
+                         item_customer_model model = new item_customer_model();
+                         model.InsertUserDetail(customerDetails);
 
 
 

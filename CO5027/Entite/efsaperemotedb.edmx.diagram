@@ -10,6 +10,7 @@
         <EntityTypeShape EntityType="SaPEModelRemote.item_versions" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="SaPEModelRemote.FK_item_pushcart_item_table" ManuallyRouted="false" />
         <AssociationConnector Association="SaPEModelRemote.FK_item_table_item_versions" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SaPEModelRemote.item_customer" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
