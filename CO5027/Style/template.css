@@ -3,7 +3,7 @@ html							{	background-image:url('../Images');	}
 body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
 body img						{		}
 
-.ulnotify                       {   float:left; }
+.ulnotify                       {   float:left; Color:gold; border-color:goldenrod; background-color:grey; list-style-type: none; }
 .ulnobullet                     {   list-style-type: none;  }
 
 
