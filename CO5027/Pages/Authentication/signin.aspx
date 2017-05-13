@@ -48,7 +48,7 @@
 
                          
                 <tr>
-                    <td><asp:Button ID="signin_button" runat="server" Text="Sig In with SaPE Account" OnClick="signin_button_Click" /></td>                    
+                    <td><asp:Button ID="signin_button" runat="server" Text="Sign In with SaPE Account" OnClick="signin_button_Click" /></td>                    
                 </tr>
 
 

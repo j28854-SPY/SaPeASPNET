@@ -129,11 +129,13 @@ body img						{		}
 #itempagecontent                {   width:960px;    }
 #itempgdiv5                     {   float:right; width:510px;    }
 #itempgdiv6                     {   float:right; width:510px;    }
+#itempgdiv10                    {   float:right; width:510px;    }
 
 .itempginfolabelcss             {   float:right; width:510px; text-align:center;    }
 .itempgcostcss                  {   float:right; width:510px;     }
 .itempgcostresultcss            {   float:right; width:510px; text-align:center;    }
 .itempgindatacss                {   float:right; width:510px;     }
+
 
 .itempgddlcss                   {   margin-left: 417px;  }
 .itempgaddbuttoncss             {   margin-left: 353px;  }

@@ -25,6 +25,7 @@
                 <div id="itempgdiv8"><h1><asp:Label runat="server" ID="itempgcode"></asp:Label></h1></div>
                 <div id="itempgdiv5"><asp:DropDownList runat="server" ID="itempgddl" CssClass="itempgddlcss"></asp:DropDownList></div>
                 <div id="itempgdiv6"><asp:Button runat="server" Text="Add To PushCart" ID="itempgaddbutton" CssClass="itempgaddbuttoncss" OnClick="itempgaddbutton_Click"></asp:Button></div>
+                <div id="itempgdiv10"><h1><asp:Label runat="server" ID="itempgresult" CssClass="itempgresultcss"></asp:Label></h1></div>
                 
       
 
