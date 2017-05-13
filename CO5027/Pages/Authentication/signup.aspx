@@ -87,7 +87,7 @@
                          
                 <tr>
                   
-                    <td><asp:TextBox ID="signup_password" runat="server"></asp:TextBox></td>   
+                    <td><asp:TextBox ID="signup_password" runat="server" TextMode="Password"></asp:TextBox></td>   
                 
                              
                 </tr>
@@ -100,7 +100,7 @@
 
                          
                 <tr>
-                    <td><asp:TextBox ID="signup_password_confirm" runat="server"></asp:TextBox></td>           
+                    <td><asp:TextBox ID="signup_password_confirm" runat="server" TextMode="Password"></asp:TextBox></td>           
                 </tr>
 
 

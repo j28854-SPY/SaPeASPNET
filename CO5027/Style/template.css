@@ -3,7 +3,7 @@ html							{	background-image:url('../Images');	}
 body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
 body img						{		}
 
-
+.ulnotify                       {   float:left; }
 .ulnobullet                     {   list-style-type: none;  }
 
 
@@ -13,6 +13,9 @@ body img						{		}
 
 #signup_leftside_content        {   width:20%; float:left; }
 #signup_leftside2_content       {   width:20%; float:left; }
+
+#signin_leftside_content        {   width:20%; float:left; }
+#signin_leftside2_content       {   width:20%; float:left; }
 
 .signup_titlecss                {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%;   }
 /* begin containers */

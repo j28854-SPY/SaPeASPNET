@@ -38,9 +38,9 @@
 
         <div id="top">
 
-            <ul class="ulnobullet">
-                <li><a href="Pages/Authentication/signin.aspx" class="signincss">Sign In</a></li>
-                <li><a href="Pages/Authentication/signup.aspx" class="signupcss">Sign Up</a></li>
+            <ul>
+                <li class="ulnotify"><asp:HyperLink ID="rank_user" runat="server"></asp:HyperLink><asp:HyperLink ID="hyper_signup_page" runat="server" NavigateUrl="~/Pages/Authentication/signup.aspx">Sign Up</asp:HyperLink></li>
+                <li class="ulnotify"><asp:LinkButton ID="lkbtn_signout" runat="server" OnClick="lbtn_signout_Click">Sign Out</asp:LinkButton><asp:HyperLink ID="hyper_signin_page" runat="server" NavigateUrl="~/Pages/Authentication/signin.aspx">Sign In</asp:HyperLink></li>
             </ul>
 
 

@@ -42,6 +42,9 @@ namespace CO5027.Pages.Authentication
                     IdentityResult result = manager.Create(user, signup_password.Text);
                     if (result.Succeeded)
                     {
+
+
+
                        /* UserDetail userDetail = new UserDetail
                         {
                             Address = txtAddress.Text,
@@ -53,6 +56,8 @@ namespace CO5027.Pages.Authentication
 
                         UserDetailModel model = new UserDetailModel();
                         model.InsertUserDetail(userDetail); */
+
+
 
                         /*  Store user in Sql Database   */
                         var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
