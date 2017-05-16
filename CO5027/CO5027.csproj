@@ -96,6 +96,10 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PayPal, Version=1.8.0.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.8.0\lib\net451\PayPal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -146,6 +150,7 @@
     <Content Include="Pages\Administer\admin.aspx" />
     <Content Include="Pages\Administer\item_click.aspx" />
     <Content Include="Pages\Administer\item_to_store.aspx" />
+    <Content Include="Pages\Authentication\ppco.aspx" />
     <Content Include="Pages\Authentication\signin.aspx" />
     <Content Include="Pages\Authentication\signup.aspx" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -278,6 +283,13 @@
     </Compile>
     <Compile Include="Pages\Administer\item_to_store.aspx.designer.cs">
       <DependentUpon>item_to_store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Authentication\ppco.aspx.cs">
+      <DependentUpon>ppco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Authentication\ppco.aspx.designer.cs">
+      <DependentUpon>ppco.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Authentication\signin.aspx.cs">
       <DependentUpon>signin.aspx</DependentUpon>

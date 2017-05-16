@@ -43,8 +43,6 @@
 
             <tr>
                 <td>                
-                    <asp:Button ID="btn_checkout" runat="server" Text="Check Out" PostBackUrl="~/Pages/ppco.aspx" CssClass="transcription_btn_checkoutcss" />
-
                     <asp:LinkButton ID="literal_paypal_checkout" Text="" runat="server" />
                 </td>
             </tr>

@@ -43,11 +43,37 @@ namespace CO5027
             literal_total_item.Text = "BND " + subTotal;
             literal_overall.Text = "BND " + total_overall;
 
-            //Add paypal button to checkout
-            //string paypal = GeneratePaypalButton(subTotal);
-            //litPaypal.Text = paypal;
+            /*  Add paypal button to checkout */
+            string paypal = paypal_generated_event(subTotal);
+            literal_paypal_checkout.Text = paypal;
         }
 
+
+
+
+
+
+
+
+
+        private string paypal_generated_event(double subTotal)
+        {
+            //Set Paypal parameters
+            string paypal = string.Format(
+                @"<script async='async' src='https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=testlcbcompsci@gmail.com' 
+                data-button='buynow' 
+                data-name='Safety & Protective Equipments Purchases' 
+                data-quantity=1
+                data-amount='{0}' 
+                data-tax='{1}'
+                data-shipping='9.75'
+                data-callback='http://localhost:56577/Pages/Authentication/ppco.aspx'
+                data-sendback='http://localhost:56577/Pages/Authentication/ppco.aspx'
+                data-env='sandbox'>
+             </script>", subTotal);
+
+            return paypal;
+        }
 
 
 
@@ -222,6 +248,6 @@ namespace CO5027
             Session[User.Identity.GetUserId()] = paid_list;
         }
 
-    
+        
     }
 }
