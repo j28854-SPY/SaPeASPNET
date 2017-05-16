@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CO5027.Entite;
+using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
 namespace CO5027
@@ -27,10 +28,11 @@ namespace CO5027
                 rank_user.Visible = true;
                 lkbtn_signout.Visible = true;
 
-                /* item_pushcart_model model = new item_pushcart_model();
-                string userId = HttpContext.Current.User.Identity.GetUserId();
-                rank_user.Text = string.Format("{0} ({1})", Context.User.Identity.Name, model.GetAmountOfOrders(userId));
-                */
+
+                item_pushcart_model model = new item_pushcart_model();
+                string customer_code = HttpContext.Current.User.Identity.GetUserId();
+                rank_user.Text = string.Format("{0} ({1})", Context.User.Identity.Name, model.total_item_carted(customer_code));
+                
             }
             else
             {
