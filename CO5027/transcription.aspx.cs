@@ -171,7 +171,7 @@ namespace CO5027
                     Text = string.Format("<h4>{0}</h4><br />{1}<br/>In Stock",
                     item.ItemName, "Item No:" + item.Code),
                     HorizontalAlign = HorizontalAlign.Left,
-                    Width = 350,
+                    Width = 180,
                 };
 
 
@@ -187,17 +187,17 @@ namespace CO5027
                 TableCell cell2_1 = new TableCell();
                 TableCell cell2_2 = new TableCell { Text = "BND " + item.ItemCostBND };
                 TableCell cell2_3 = new TableCell();
-                TableCell cell2_4 = new TableCell { Text = "BND " + Math.Round(Convert.ToDecimal(carted.Total * (item.ItemCostBND)), 2) };
+                TableCell cell2_4 = new TableCell { Text = "BND " + Math.Round((carted.Total * (double)item.ItemCostBND), 2) };
                 TableCell cell2_5 = new TableCell();
 
 
 
-                //Set custom controls
+                /*  table functions */
                 cell1_1.Controls.Add(btnDisplay);
                 cell1_6.Controls.Add(click_delete);
                 cell2_3.Controls.Add(itempgddl);
 
-                //Add rows & cells to table
+                /*  add rows if added new carted    */
                 row1.Cells.Add(cell1_1);
                 row1.Cells.Add(cell1_2);
                 row1.Cells.Add(cell1_3);
@@ -214,11 +214,11 @@ namespace CO5027
                 table.Rows.Add(row2);
                 transcription_page_panel.Controls.Add(table);
 
-                //Add total of current purchased item to subtotal
-                //subTotal +=  { Math.Round(Convert.ToDecimal(carted.Total * (item.ItemCostBND)), 2)};
+               
+                subTotal += (carted.Total * (double)item.ItemCostBND);
             }
 
-            //Add selected objects to Session
+            
             Session[User.Identity.GetUserId()] = paid_list;
         }
 
