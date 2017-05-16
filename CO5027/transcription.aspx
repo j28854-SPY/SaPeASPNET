@@ -26,7 +26,7 @@
                     <b>Delivery Charge: </b>
                 </td>
                 <td>
-                    BND 9
+                    BND 9.75
                 </td>
             </tr>
 
