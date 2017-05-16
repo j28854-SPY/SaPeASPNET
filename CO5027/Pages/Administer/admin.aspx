@@ -23,14 +23,14 @@
                 <asp:BoundField DataField="ItemDisplay" HeaderText="ItemDisplay" SortExpression="ItemDisplay" />
                 <asp:BoundField DataField="Code" HeaderText="Code" InsertVisible="False" ReadOnly="True" SortExpression="Code" />
             </Columns>
-            <FooterStyle BackColor="Tan" />
-            <HeaderStyle BackColor="Tan" Font-Bold="True" />
-            <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
-            <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
-            <SortedAscendingCellStyle BackColor="#FAFAE7" />
-            <SortedAscendingHeaderStyle BackColor="#DAC09E" />
-            <SortedDescendingCellStyle BackColor="#E1DB9C" />
-            <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+            <FooterStyle CssClass="gv_fs_item_table_css" />
+            <HeaderStyle CssClass="gv_hs_item_table_css" />
+            <PagerStyle CssClass="gv_ps_item_table_css"  />
+            <SelectedRowStyle CssClass="gv_srs_item_table_css" />
+            <SortedAscendingCellStyle CssClass="gv_sacs_item_table_css"  />
+            <SortedAscendingHeaderStyle CssClass="gv_sahs_item_table_css" />
+            <SortedDescendingCellStyle CssClass="gv_sdcs_item_table_css"  />
+            <SortedDescendingHeaderStyle CssClass="gv_sdhs_item_table_css"  />
         </asp:GridView>
 
      
@@ -65,11 +65,11 @@
 
     <div id="admin_gridview2">
 
-        <asp:Label ID="admin_lbl_itemversions" class="admin_label_class1" runat="server" Text="Table of Item Versions in Sql Server Database" Width="100%"></asp:Label>
+        <asp:Label ID="admin_lbl_itemversions" class="admin_label_class" runat="server" Text="Table of Item Versions in Sql Server Database" Width="100%"></asp:Label>
 
         <hr />
 
-        <asp:GridView ID="admin_gv_itemversion" runat="server" CssClass="admin_gv_mta_class" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Code" DataSourceID="admin_item_versions" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="admin_gv_itemversion" runat="server" CssClass="admin_gv_mta_class" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="admin_item_versions" CellPadding="4" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -77,15 +77,15 @@
                 <asp:BoundField DataField="Code" HeaderText="Code" InsertVisible="False" ReadOnly="True" SortExpression="Code" />
                 <asp:BoundField DataField="ItemDisplay" HeaderText="ItemDisplay" SortExpression="ItemDisplay" />
             </Columns>
-            <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-            <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-            <SortedAscendingCellStyle BackColor="#FDF5AC" />
-            <SortedAscendingHeaderStyle BackColor="#4D0000" />
-            <SortedDescendingCellStyle BackColor="#FCF6C0" />
-            <SortedDescendingHeaderStyle BackColor="#820000" />
+            <FooterStyle CssClass="gv_fs_item_versions_css"  />
+            <HeaderStyle CssClass="gv_hs_item_versions_css"  />
+            <PagerStyle CssClass="gv_ps_item_versions_css"  />
+            <RowStyle CssClass="gv_rs_item_versions_css" />
+            <SelectedRowStyle CssClass="gv_srs_item_versions_css" />
+            <SortedAscendingCellStyle CssClass="gv_sacs_item_versions_css" />
+            <SortedAscendingHeaderStyle CssClass="gv_sahs_item_versions_css" />
+            <SortedDescendingCellStyle  CssClass="gv_sdcs_item_versions_css" />
+            <SortedDescendingHeaderStyle CssClass="gv_sdhs_item_versions_css" />
         </asp:GridView>
        
 

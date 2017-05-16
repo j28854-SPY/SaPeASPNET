@@ -222,31 +222,6 @@ namespace CO5027
             Session[User.Identity.GetUserId()] = paid_list;
         }
 
-        
-
-
-
-
-
-
-
-        private string GeneratePaypalButton(double subTotal)
-        {
-            //Set Paypal parameters
-            string paypal = string.Format(
-                @"<script async='async' src='https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=garageseller@gmail.com' 
-                data-button='buynow' 
-                data-name='Garage Purchases' 
-                data-quantity=1
-                data-amount='{0}' 
-                data-tax='{1}'
-                data-shipping='15'
-                data-callback='http://localhost:50992/Pages/ppco.aspx'
-                data-sendback='http://localhost:50992/Pages/ppco.aspx'
-                data-env='sandbox'>
-             </script>", subTotal, (subTotal * 0.21));
-
-            return paypal;
-        }
+    
     }
 }

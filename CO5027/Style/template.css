@@ -229,9 +229,38 @@ body img						{		}
 
 /*  start admin_database content*/
 
-.admin_gv_mta_class             {   width:960px;  }
+.admin_gv_mta_class             {   width:100%; }
 .admin_label_class              {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
 
+/* BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center"
+
+
+BackColor="DarkSlateBlue" ForeColor="GhostWhite"
+BackColor="#FAFAE7"
+BackColor="#DAC09E"
+BackColor="#E1DB9C"
+BackColor="#C2A47B"
+BackColor="#990000" Font-Bold="True" ForeColor="White"
+    #FFCC66
+
+*/
+
+
+.gv_fs_item_table_css           {   background-color:tan; font:bold;    } 
+.gv_hs_item_table_css           {   background-color:tan;   }
+.gv_ps_item_table_css           {   background-color:PaleGoldenrod; }
+
+
+
+.gv_fs_item_versions_css           {   background-color:#990000; font:bold;  } 
+.gv_hs_item_versions_css           {   background-color:#FFCC66; color:red;  }
+.gv_ps_item_versions_css           {   background-color:#FFCC66; }
+.gv_rs_item_versions_css           {   background-color:#FFFBD6; }
+.gv_srs_item_versions_css          {   background-color:#FFCC66; font:bold; }
+.gv_sacs_item_versions_css         {   background-color:#FDF5AC; }
+.gv_sahs_item_versions_css         {   background-color:#4D0000; }
+.gv_sdcs_item_versions_css         {   background-color:#FCF6C0; }
+.gv_sdhs_item_versions_css         {   background-color:#820000; }
 
 #upload_item_data_page_image    {     }
 
