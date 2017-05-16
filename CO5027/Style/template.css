@@ -241,7 +241,15 @@ body img						{		}
 /* end content */
 
 
+/*  start transcription content */
+.pushcart_table                 {   text-align: center; border: 33px groove brown; margin-bottom: 7px; width: 100%; padding: 10px;    }
+.pushcart_table input           {   width: 220px; height: 220px;  }
+.pushcart_table h4              {   padding: 0;  margin: 0; }
+.pushcart_table tr td select    {   width: 100%;   }
 
+
+
+/* stop transcription content */
 
 
 /* begin footer */

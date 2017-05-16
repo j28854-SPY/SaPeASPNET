@@ -64,7 +64,7 @@ namespace CO5027
             var pc_model = new item_pushcart_model();
             pc_model.delete_item(pushcart_code);
 
-            Response.Redirect("~/Pages/transcription.aspx");
+            Response.Redirect("~/transcription.aspx");
         }
 
 
@@ -88,7 +88,7 @@ namespace CO5027
             pcModel.update_amount(pushcart_code, total);
 
 
-            Response.Redirect("~/Pages/transcription.aspx");
+            Response.Redirect("~/transcription.aspx");
         }
 
        
@@ -116,7 +116,7 @@ namespace CO5027
                 {
                     ImageUrl = string.Format("~/Images/{0}", item.ItemDisplay),
                     AlternateText = "ServerPic",
-                    PostBackUrl = string.Format("~/Pages/item_click.aspx?Code={0}", item.Code)
+                    PostBackUrl = string.Format("~/Pages/Administer/item_click.aspx?Code={0}", item.Code)
                 };
 
 
@@ -125,8 +125,8 @@ namespace CO5027
 
                 LinkButton click_delete = new LinkButton
                 {
-                    PostBackUrl = string.Format("~/Pages/transcription.aspx?Code={0}", carted.Code),
-                    Text = "Delete Item",
+                    PostBackUrl = string.Format("~/transcription.aspx?Code={0}", carted.Code),
+                    Text = "Delete Carted Item",
                     ID = "del" + carted.Code,
                 };
 
@@ -215,7 +215,7 @@ namespace CO5027
                 transcription_page_panel.Controls.Add(table);
 
                 //Add total of current purchased item to subtotal
-                subTotal += (Convert.ToDecimal(carted.Total * (item.ItemCostBND));
+                //subTotal += carted.Total * item.ItemCostBND;
             }
 
             //Add selected objects to Session
