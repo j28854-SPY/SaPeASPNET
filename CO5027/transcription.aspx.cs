@@ -175,7 +175,7 @@ namespace CO5027
                 };
 
 
-
+               
 
 
 
@@ -187,7 +187,7 @@ namespace CO5027
                 TableCell cell2_1 = new TableCell();
                 TableCell cell2_2 = new TableCell { Text = "BND " + item.ItemCostBND };
                 TableCell cell2_3 = new TableCell();
-                TableCell cell2_4 = new TableCell(); //{ Text = "BND " + Math.Round((carted.Total * item.ItemCostBND), 2) };
+                TableCell cell2_4 = new TableCell{ Text = "BND " + Math.Round(Convert.ToDecimal(carted.Total * (item.ItemCostBND)), 2) };
                 TableCell cell2_5 = new TableCell();
 
 
@@ -215,7 +215,7 @@ namespace CO5027
                 transcription_page_panel.Controls.Add(table);
 
                 //Add total of current purchased item to subtotal
-                //subTotal += (carted.Total * item.ItemCostBND);
+                subTotal += (Convert.ToDecimal(carted.Total * (item.ItemCostBND));
             }
 
             //Add selected objects to Session
